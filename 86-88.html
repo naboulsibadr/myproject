@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>86-88</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-weight: bold;
+      margin: 50px auto;
+  }
+    .center-flex {
+    width: 200px;
+    height: 200px;
+    background-color: #9e9e9e40;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+    .center-position {
+    background-color: #9e9e9e21;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .circle-100 {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #9e9e9e40;
+  }
+  .circle-200 {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-color: #9e9e9e40;
+  }
+  .arrow {
+    width: 800px;
+    height: 100px;
+    padding: 0px 30px;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: center;
+  }
+  .top::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #e7e7e7;
+    transform: rotate(45deg);
+    position: relative;
+    top: -50px;
+    left: 310px;
+  }
+  .right::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #e7e7e7;
+    transform: rotate(45deg);
+    position: relative;
+    top: 0px;
+    left: 700px;
+  }
+  .bottom::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #e7e7e7;
+    transform: rotate(45deg);
+    position: relative;
+    top: 50px;
+    left: 310px;
+  }
+  .left::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #e7e7e7;
+    transform: rotate(45deg);
+    position: relative;
+    top:0px;
+    left:-100px;
+    z-index: -1;
+  }
+  </style>
+</head>
+<body>
+  <div class="center-flex">Framework</div>
+  <div class="center-position"><div class="center-flex">Framework</div></div>
+  <div class="center-flex circle-100">Framework</div>
+  <div class="center-flex circle-200">Framework</div>
+  <hr style="top: auto; position: relative; border: 1px dashed red;">
+  <div>
+  <div><div class="arrow top">Elzero</div></div>
+  <div><div class="arrow right">Elzero</div></div>
+  <div><div class="arrow bottom">Elzero</div></div>
+  <div><div class="arrow left">Elzero</div></div>
+  </div>
+</body>
+</html>
